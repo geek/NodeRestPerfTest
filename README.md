@@ -10,6 +10,10 @@
 
 ## Results
 
+* y-axis = req/s  (higher is better)
+
+![graph](./results.png "Results Graph")
+
 ### Metal
 
 ```
