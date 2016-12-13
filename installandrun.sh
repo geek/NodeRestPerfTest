@@ -1,5 +1,5 @@
 yum update
-yum install apache2-utils
+yum install httpd-tools -y
 npm install hapi
 npm install express
 npm install restify
