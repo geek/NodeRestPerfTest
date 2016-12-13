@@ -1,5 +1,5 @@
-apt-get install apache2-utils
-apt-get install npm
+yum install apache2-utils
+yum install npm
 npm install hapi
 npm install express
 npm install restify
@@ -15,8 +15,7 @@ pkill -f expressserver ;
 sleep 5
 
 echo hapi >> results.txt ;
-node hapiserver.js & sleep 5 ;
-ab -k -n 50000 -c 100 -t 20 http://127.0.0.1:8000/ | grep "Requests per second:" >> results.txt ;
+node hapiserver.js & sleep 5 ; ab -k -n 50000 -c 100 -t 20 http://127.0.0.1:8000/ | grep "Requests per second:" >> results.txt ;
 pkill -f hapiserver ;
 sleep 5
 
