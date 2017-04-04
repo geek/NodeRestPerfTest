@@ -1,10 +1,8 @@
-yum update
-yum install httpd-tools -y
-npm install hapi
-npm install express
-npm install restify
-npm install koa
-npm install total.js
+npm install hapi@16
+npm install express@4
+npm install restify@4
+npm install koa@2
+npm install total.js@2
 
 echo express >> results.txt ;
 node expressserver.js & sleep 5 ; ab -k -n 50000 -c 100 -t 20 http://127.0.0.1:8000/ | grep "Requests per second:" >> results.txt ;
