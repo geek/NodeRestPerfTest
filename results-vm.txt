@@ -1,17 +1,12 @@
 express
-Requests per second:    1922.85 [#/sec] (mean)
-
+Requests per second:    2128.04 [#/sec] (mean)
 hapi
-Requests per second:    730.77 [#/sec] (mean)
-
+Requests per second:    878.45 [#/sec] (mean)
 node
-Requests per second:    2819.11 [#/sec] (mean)
-
+Requests per second:    3305.18 [#/sec] (mean)
 restify
-Requests per second:    1706.32 [#/sec] (mean)
-
+Requests per second:    1785.11 [#/sec] (mean)
 koa
-Requests per second:    2118.25 [#/sec] (mean)
-
+Requests per second:    2504.24 [#/sec] (mean)
 total.js
-Requests per second:    2304.08 [#/sec] (mean)
+Requests per second:    2890.36 [#/sec] (mean)

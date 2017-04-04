@@ -1,11 +1,11 @@
-# Node.js Framework Performances Compared on the metal vs VM
+# Node.js Framework Performances Compared Container vs VM
 
 ## Test Setup
 
 * CentOS 7
-* Node.js v6.9.2
+* Node.js v6.7.0
 * 2GB RAM & 1 CPU in the same datacenter
-* VM vs Metal
+* Linux VM vs Linux Container on Metal
 
 
 ## Results
@@ -14,47 +14,44 @@
 
 ![graph](./results.png "Results Graph")
 
-### Metal
 
-```
-express
-Requests per second:    3539.62 [#/sec] (mean)
+### CentOS 7 in Container
 
-hapi
-Requests per second:    1111.33 [#/sec] (mean)
+*express*
+Requests per second:    4000.75 [#/sec] (mean)
 
-node
-Requests per second:    5441.34 [#/sec] (mean)
+*hapi*
+Requests per second:    1183.04 [#/sec] (mean)
 
-restify
-Requests per second:    2704.83 [#/sec] (mean)
+*node*
+Requests per second:    7071.19 [#/sec] (mean)
 
-koa
-Requests per second:    3652.47 [#/sec] (mean)
+*restify*
+Requests per second:    3406.93 [#/sec] (mean)
 
-total.js
-Requests per second:    4649.44 [#/sec] (mean)
-```
+*koa*
+Requests per second:    4388.11 [#/sec] (mean)
+
+*total.js*
+Requests per second:    5068.96 [#/sec] (mean)
 
 
-### VM
+### CentOS 7 in VM
 
-```
-express
-Requests per second:    1922.85 [#/sec] (mean)
+*express*
+Requests per second:    2128.04 [#/sec] (mean)
 
-hapi
-Requests per second:    730.77 [#/sec] (mean)
+*hapi*
+Requests per second:    878.45 [#/sec] (mean)
 
-node
-Requests per second:    2819.11 [#/sec] (mean)
+*node*
+Requests per second:    3305.18 [#/sec] (mean)
 
-restify
-Requests per second:    1706.32 [#/sec] (mean)
+*restify*
+Requests per second:    1785.11 [#/sec] (mean)
 
-koa
-Requests per second:    2118.25 [#/sec] (mean)
+*koa*
+Requests per second:    2504.24 [#/sec] (mean)
 
-total.js
-Requests per second:    2304.08 [#/sec] (mean)
-```
+*total.js*
+Requests per second:    2890.36 [#/sec] (mean)
